@@ -1,0 +1,63 @@
+/* Empty. Add your own CSS if you like */
+@import url(http://fonts.googleapis.com/css?family=Calligraffitti|Satisfy);
+
+.logotxt{
+    font-size: 32px;
+    padding-top: 15px;
+    font-family: 'Calligraffitti', cursive;
+    color: #ffffff;
+
+}
+.textCenter
+{text-align:center;}
+
+.bg{
+    background-image: url('../img/saxonswiss.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.main{
+    -moz-box-shadow: 0 0 5px 5px #616161;
+    -webkit-box-shadow: 0 0 5px 5px #2a2a2a;
+    box-shadow: 0 0 3px 3px #888;
+    border-radius:20px;
+
+
+}
+
+.heading-desc{
+    font-size:20px;
+    font-weight:bold;
+    text-align: center;
+
+}
+
+.alert{
+
+}
+.main-alert{
+
+    top:70px;
+    left:5px;
+    right:5px;
+    max-width: 400px;
+}
+
+.alert-hidden{
+    visibility:hidden ;
+}
+
+a {
+    color: #fff6f8;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: #8bc632;
+    text-decoration:none;
+    cursor:pointer;
+}

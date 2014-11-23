@@ -1,0 +1,55 @@
+
+
+<ion-view class="bg" >
+    <ion-content class=" has-header" scroll="false" >
+        <form  ng-submit="submit()" name="register" ng-controller="LoginCtrl" novalidate>
+            <div class="textCenter">
+                <h3  style="color:#ffffff">Spontaneous Travel anyone?</h3><br>
+            </div>
+
+            <div>
+                <h1 class="textCenter logotxt">3Zixty</h1><br><br>
+            </div>
+            <p class="textCenter" ng-show="register.email.$dirty && register.email.$invalid">Please enter a proper email address</p>
+            <div class="padding">
+                <button class="button padding button-small button-block button-assertive" type="button" ng-click="google()">
+                    <i class="ion ion-social-googleplus">
+                       Sign in with Google
+                    </i>
+
+                </button>
+            </div>
+
+            <div class="list list-inset">
+                <label class="item-input">
+                    <i class="icon ion-email assertive placeholder-icon"></i>
+                    <input type="email"  name="email" ng-model="email" placeholder="Email" required>
+
+                </label>
+
+                <label class="item-input">
+                    <i class="icon ion-locked placeholder-icon"></i>
+                    <input type="password" name="password" ng-model="password" placeholder="Password" required>
+                </label>
+
+
+
+            </div>
+
+<div class="padding-left">
+    <a  href="#/register" class="">Create Account</a>
+</div>
+
+
+            <div class="padding">
+                <button ng-disabled="register.$invalid" class="button button-small button-block button-assertive" type="submit">
+                    Sign In
+                </button>
+            </div>
+            <br>
+
+            <div ng-include="'views/alerts.html'"></div>
+        </form>
+
+    </ion-content>
+</ion-view>

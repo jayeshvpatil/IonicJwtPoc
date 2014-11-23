@@ -1,0 +1,11 @@
+<ion-view>
+    <ion-content ng-controller="PlacesCtrl">
+        <div ng-cloak class="padding textCenter button  button-block button-{{alert.type}} animated main-alert" ng-class="{'flipInY':alert.show,'flipOutY':!alert.show ,'alert:hidden':!alert.hasBeenShown}">
+            <strong>{{alert.title}}</strong>
+            {{alert.message}}
+        </div>
+        <div ng-repeat="p in places">{{p}}
+
+        </div>
+    </ion-content>
+</ion-view>
